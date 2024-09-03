@@ -1,0 +1,24 @@
+#card-component {
+  border: solid 0.5px #676767;
+  border-radius: 5px;
+  //   gap: 48px;
+
+  img {
+  }
+
+  .text {
+    padding: 16px 0;
+    text-align: center;
+
+    h5 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+      width: 70%;
+      margin: 0 auto;
+      //   padding: 16px 0;
+    }
+  }
+}
