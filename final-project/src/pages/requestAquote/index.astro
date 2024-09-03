@@ -60,6 +60,48 @@ import './styles.css';
 			</form>
 			<img src="/requestAquote/Image.png" />
 		</div>
+		<div class="containerSp">
+			<p class="containerSp_paragraph1">Contact us</p>
+			<h1 class="containerSp_title">Request a quote</h1>
+			<p class="containerSp_paragraph2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			<form class="containerSp_form">
+				<label class="containerSp_form_fullNameLabel" for="full-name">Full name</label>
+				<input class="containerSp_form_fullNameInput" type="text" id="full-name" name="full-name" />
+
+				<label class="containerSp_form_phoneNumberLabel" for="phone-number">Phone number</label>
+				<input class="containerSp_form_phoneNumberInput" type="number" id="phone-number" name="full-name" />
+
+				<label class="containerSp_form_serviceLabel" for="full-name">Select service</label>
+				<select class="containerSp_form_serviceSelect" name="select-service" id="select-service">
+					<option value="service1">service1</option>
+					<option value="service2">service2</option>
+					<option value="service3">service3</option>
+					<option value="service4">service4</option>
+					<option value="service5">service5</option>
+					<option value="service6">service6</option>
+				</select>
+
+				<label class="containerSp_form_selectTimeLabel" for="phone-number">Select time</label>
+				<select class="containerSp_form_selectTimeSelect" name="select-service" id="select-service">
+					<option value="1900-01-01T00:00">1900-01-01</option>
+					<option value="1900-01-02T00:00">1900-01-02</option>
+					<option value="1900-01-03T00:00">1900-01-03</option>
+					<option value="1900-01-04T00:00">1900-01-04</option>
+					<option value="1900-01-05T00:00">1900-01-05</option>
+					<option value="1900-01-06T00:00">1900-01-06</option>
+				</select>
+
+				<label class="containerSp_form_textareaLabel" for="message">Message</label>
+				<textarea class="containerSp_form_textarea" id="message" name="message" rows="10" placeholder="Type your message..."  />
+
+				<div class="containerSp_form_checkbox">
+					<input class="containerSp_form_checkbox_input" type="checkbox" id="terms" name="terms" />
+    			<label for="terms">I accept the <a href="https://example.com/">Terms</a></label>
+				</div>
+
+				<button class="containerSp_form_submit" type="submit">Submit</button>
+			</form>
+		</div>
 	</body>
 </html>
 
