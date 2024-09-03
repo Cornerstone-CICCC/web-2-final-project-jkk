@@ -1,0 +1,105 @@
+.container {
+  padding: 112px 64px;
+  display: flex;
+  gap: 80px;
+}
+
+.container_form_paragraph1 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.container_form_title {
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  margin-bottom: 24px;
+}
+
+.container_form_paragraph2 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 32px;
+}
+
+.container_form_inputs,
+.container_form_selects {
+  display: flex;
+  gap: 24px;
+}
+
+.container_form_selects {
+  margin-bottom: 24px;
+}
+
+.container_form_inputs {
+  margin-bottom: 24px;
+}
+
+.container_form_inputs_1_label,
+.container_form_inputs_2_label,
+.container_form_selects_1_label,
+.container_form_selects_2_label,
+.container_form_textareaLabel {
+  display: block;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.container_form_inputs_1_input,
+.container_form_inputs_2_input {
+  padding: 0;
+}
+
+.container_form_inputs_1_input,
+.container_form_inputs_2_input,
+.container_form_selects_1_select,
+.container_form_selects_2_select {
+  width: 296px;
+  height: 48px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.container_form_textarea {
+  width: 616px;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.container_form_checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 41px;
+}
+
+.container_form_checkbox_input {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+}
+
+.container_form_submit {
+  color: white;
+  background-color: #000000;
+  padding: 12px 24px;
+  border-radius: 5px;
+}
+
+@media (min-width: 1024px) {
+}
+
+p,
+h1 {
+  margin: 0;
+}
