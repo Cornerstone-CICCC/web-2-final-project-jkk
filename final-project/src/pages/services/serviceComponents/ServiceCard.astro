@@ -1,0 +1,11 @@
+---
+const {img, title} = Astro.props;
+import "../serviceStyles/_serviceCard.css"
+---
+<div id="card-component">
+    <img src=`../../../public/services/${img}` />
+    <div class="text">
+        <h5>{title}</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+    </div>
+</div>

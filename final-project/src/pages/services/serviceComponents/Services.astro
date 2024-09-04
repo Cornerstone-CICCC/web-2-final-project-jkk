@@ -1,0 +1,37 @@
+---
+import ServiceCard from "./ServiceCard.astro"
+import "../serviceStyles/_services.css"
+const cardData = [
+    {img: "Image1.png", title: "One Bedroom Apartment"},
+    {img: "Image2.png", title: "Window Cleaning"},
+    {img: "Image3.png", title: "Residential Cleaning"},
+    {img: "Image4.png", title: "Construction Cleaning"},
+    {img: "Image5.png", title: "Commercial Cleaning"},
+    {img: "Image6.png", title: "Two Bedroom Apartment"},
+]
+---
+<div id="services">
+    <div class="top-cards">
+        <ServiceCard img="Image1.png" title="One Bedroom Apartment" />
+        <ServiceCard img="Image2.png" title="Window Cleaning"  />
+        <ServiceCard img="Image3.png" title="Residential Cleaning" />
+    </div>
+    <div class="bottom-cards hidden">
+        <ServiceCard img="Image4.png" title="Construction Cleaning" />
+        <ServiceCard img="Image5.png" title="Commercial Cleaning" />
+        <ServiceCard img="Image6.png" title="Two Bedroom Apartment" />
+    </div>
+
+    <!-- {
+        cardData.map(data => <ServiceCard img={data.img} title={data.title} />)
+    } -->
+
+    <button class="btn">View all</button>
+</div>
+
+<script>
+    document.querySelector(".btn").addEventListener("click", function() {
+        document.querySelector(".bottom-cards").classList.remove("hidden")
+        document.querySelector(".btn").style.display = "none"
+    })
+</script>

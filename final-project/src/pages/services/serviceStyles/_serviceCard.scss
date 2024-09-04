@@ -1,0 +1,42 @@
+#card-component {
+  border: solid 0.5px #676767;
+  border-radius: 5px;
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+
+  .text {
+    padding: 16px 0;
+    text-align: center;
+
+    h5 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  #card-component {
+    width: 380px;
+    height: 494px;
+    margin-top: 48px;
+
+    .text {
+      padding: 0;
+      margin: 0 auto;
+      gap: 16px;
+
+      p {
+        width: 80%;
+      }
+    }
+  }
+}
