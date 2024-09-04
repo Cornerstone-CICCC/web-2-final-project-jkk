@@ -1,0 +1,167 @@
+.container {
+  padding: 112px 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_form_paragraph1,
+.containerSp_paragraph1 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.container_form_title {
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  margin-bottom: 24px;
+}
+
+.container_form_paragraph2,
+.containerSp_paragraph2 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 32px;
+}
+
+.container_form_inputs,
+.container_form_selects {
+  display: flex;
+  gap: 24px;
+}
+
+.container_form_selects {
+  margin-bottom: 24px;
+}
+
+.container_form_inputs {
+  margin-bottom: 24px;
+}
+
+.container_form_inputs_1_label,
+.container_form_inputs_2_label,
+.container_form_selects_1_label,
+.container_form_selects_2_label,
+.container_form_textareaLabel,
+.containerSp_form_fullNameLabel,
+.containerSp_form_phoneNumberLabel,
+.containerSp_form_serviceLabel,
+.containerSp_form_selectTimeLabel,
+.containerSp_form_textareaLabel {
+  display: block;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.container_form_inputs_1_input,
+.container_form_inputs_2_input {
+  padding: 0;
+}
+
+.container_form_inputs_1_input,
+.container_form_inputs_2_input,
+.container_form_selects_1_select,
+.container_form_selects_2_select,
+.containerSp_form_fullNameInput {
+  width: 296px;
+  height: 48px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.container_form_textarea {
+  width: 616px;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.container_form_checkbox,
+.containerSp_form_checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 41px;
+}
+
+.container_form_checkbox_input,
+.containerSp_form_checkbox_input {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+}
+
+.container_form_submit,
+.containerSp_form_submit {
+  color: white;
+  background-color: #000000;
+  padding: 12px 24px;
+  border-radius: 5px;
+}
+
+@media (min-width: 428px) {
+  .containerSp {
+    display: none;
+  }
+}
+
+@media (max-width: 428px) {
+  .container {
+    display: none;
+  }
+  .containerSp {
+    display: block;
+    padding: 48px 24px;
+  }
+  .containerSp_title {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41.6px;
+    margin-bottom: 24px;
+  }
+  .containerSp_paragraph2 {
+    width: max-content;
+  }
+
+  .containerSp_form_fullNameInput,
+  .containerSp_form_phoneNumberInput {
+    padding: 0;
+  }
+
+  .containerSp_form_fullNameInput,
+  .containerSp_form_phoneNumberInput,
+  .containerSp_form_serviceSelect,
+  .containerSp_form_selectTimeSelect {
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .containerSp_form_textarea {
+    width: -webkit-fill-available;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 24px;
+  }
+
+  .containerSp_form_submit {
+    width: 100%;
+  }
+}
+
+body,
+p,
+h1 {
+  margin: 0;
+}
