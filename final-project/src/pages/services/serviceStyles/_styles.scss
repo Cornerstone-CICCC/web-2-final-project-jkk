@@ -5,4 +5,28 @@ body {
 
 main {
   background-color: #f7f7f7;
+  padding: 5rem 0;
+
+  #service-title {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+
+    h1 {
+      font-family: Roboto;
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  main {
+    #service-title {
+      margin: 0 auto;
+      width: 380px;
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
 }

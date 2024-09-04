@@ -1,4 +1,19 @@
 #services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 64px 86px 0;
+}
+
+@media screen and (max-width: 428px) {
+  #services {
+    display: grid;
+    grid-template-columns: repeat(1, 380px);
+    padding: 64px 0;
+    justify-content: center;
+
+    .hidden {
+      display: none;
+    }
+  }
 }
