@@ -1,0 +1,111 @@
+.footer {
+  padding: 80px 64px;
+}
+
+.footer_main {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #000000;
+}
+
+.footer_main_formArea {
+  width: 500px;
+}
+
+.footer_main_formArea_logoArea {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.footer_main_formArea_logoArea_title {
+  font-size: 25.07px;
+  font-weight: 700;
+  line-height: 30.34px;
+}
+
+.footer_main_formArea_paragraph1 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.footer_main_formArea_form {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.footer_main_formArea_form_input {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  width: 339px;
+  height: 22px;
+}
+
+.footer_main_formArea_form_button {
+  padding: 12px 24px;
+  border-radius: 5px;
+  width: 119px;
+  height: 48px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+}
+
+.footer_main_formArea_paragraph2 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer_main_links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer_main_links_section {
+  width: 200px;
+}
+
+.footer_main_links_section_header {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.footer_main_links_section_link {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 8px 0;
+}
+
+.footer_main_links_section_iconArea {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer_main_links_section_iconArea_icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer_sub {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 33px;
+}
+
+.footer_sub_copyRight {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.footer_sub_links {
+  display: flex;
+  gap: 24px;
+}

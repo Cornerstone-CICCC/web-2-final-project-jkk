@@ -1,16 +1,69 @@
 ---
-
+import './styles.css';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<footer class="footer">
+  <div class="footer_main">
+    <div class="footer_main_formArea">
+      <div class="footer_main_formArea_logoArea">
+        <img src="/public/components/footer/logo.svg" alt="Logo" class="footer_main_logo" />
+        <strong class="footer_main_formArea_logoArea_title">Ddsgnr</strong>
+      </div>
+      <p class="footer_main_formArea_paragraph1">
+        Join our newsletter to stay up to date on features and releases.
+      </p>
+      <form class="footer_main_formArea_form">
+        <input class="footer_main_formArea_form_input" type="email" placeholder="Enter your email" />
+        <button class="footer_main_formArea_form_button" type="submit">Subscribe</button>
+      </form>
+      <p class="footer_main_formArea_paragraph2">
+        By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.
+      </p>
+    </div>
+    <div class="footer_main_links">
+      <div class="footer_main_links_section">
+        <span class="footer_main_links_section_header">About Us</span>
+        <a href="/" class="footer_main_links_section_link">Home</a>
+        <a href="/aboutUs" class="footer_main_links_section_link">About</a>
+        <a href="/services" class="footer_main_links_section_link">Services</a>
+        <a href="/https://example.com/" class="footer_main_links_section_link">Teams</a>
+        <a href="/requestAquote" class="footer_main_links_section_link">Contact</a>
+      </div>
+      <div class="footer_main_links_section">
+        <span class="footer_main_links_section_header">Services</span>
+        <a href="/" class="footer_main_links_section_link">Window</a>
+        <a href="/aboutUs" class="footer_main_links_section_link">Residential</a>
+        <a href="/services" class="footer_main_links_section_link">Commercial</a>
+        <a href="/https://example.com/" class="footer_main_links_section_link">Apartment</a>
+        <a href="/requestAquote" class="footer_main_links_section_link">Residential</a>
+      </div>
+      <div class="footer_main_links_section">
+        <span class="footer_main_links_section_header">Follow Us</span>
+        <div class="footer_main_links_section_iconArea">
+          <img src="/public/components/footer/Facebook.svg" alt="Facebook" class="footer_main_links_section_iconArea_icon" />
+          <a href="https://www.facebook.com/" class="footer_main_links_section_link">Facebook</a>
+        </div>
+        <div class="footer_main_links_section_iconArea">
+          <img src="/public/components/footer/Instagram.svg" alt="Instagram" class="footer_main_links_section_iconArea_icon" />
+          <a href="https://www.instagram.com/accounts/login/?hl=en" class="footer_main_links_section_link">Instagram</a>
+        </div>
+        <div class="footer_main_links_section_iconArea">
+          <img src="/public/components/footer/Twitter.svg" alt="Twitter" class="footer_main_links_section_iconArea_icon" />
+          <a href="https://x.com/i/flow/login" class="footer_main_links_section_link">Twitter</a>
+        </div>
+        <div class="footer_main_links_section_iconArea">
+          <img src="/public/components/footer/LinkedIn.svg" alt="LinkedIn" class="footer_main_links_section_iconArea_icon" />
+          <a href="https://www.linkedin.com/company/login" class="footer_main_links_section_link">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer_sub">
+    <span class="footer_sub_copyRight">2023 Ddsgnr. All right reserved.</span>
+    <div class="footer_sub_links">
+      <a href="https://example.com/" class="footer_sub_links_link">Privacy Policy</a>
+      <a href="https://example.com/" class="footer_sub_links_link">Terms of Service</a>
+      <a href="https://example.com/" class="footer_sub_links_link">Cookies Settings</a>
+    </div>
+  </div>
+</footer>
