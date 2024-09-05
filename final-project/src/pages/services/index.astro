@@ -1,6 +1,5 @@
 ---
 import Services from "./serviceComponents/Services.astro"
-import Header from "../../components/header/Header.astro"
 const serviceImages = await Astro.glob("../../../public/services/*.png")
 import "./serviceStyles/_styles.css"
 ---
@@ -13,7 +12,6 @@ import "./serviceStyles/_styles.css"
         <meta name="generator" content={Astro.generator} />
         <title>Our Services</title>
     </head>
-    <Header />
     <body>
         <main>
             <div id="service-title">
