@@ -100,7 +100,8 @@
 
 .container_main_form_submit,
 .containerSp_main_form_submit,
-.container_sub_button {
+.container_sub_button,
+.containerSp_sub_button {
   color: white;
   background-color: #000000;
   padding: 12px 24px;
@@ -139,7 +140,10 @@
   }
   .containerSp {
     display: block;
+  }
+  .containerSp_main {
     padding: 48px 24px;
+    background-color: #f7f7f7;
   }
   .containerSp_main_title {
     font-family: Roboto;
@@ -174,6 +178,23 @@
 
   .containerSp_main_form_submit {
     width: 100%;
+  }
+  .containerSp_sub {
+    padding: 48px 24px;
+  }
+  .containerSp_sub_main {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+  .containerSp_sub_sub {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 48px;
+  }
+  .containerSp_sub_button {
+    height: 40px;
   }
 }
 
