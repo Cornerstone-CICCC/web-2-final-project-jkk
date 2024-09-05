@@ -2,17 +2,22 @@ header {
   display: flex;
   flex-direction: column;
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   #top-header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     padding: 0 64px;
+    flex-wrap: wrap;
 
     #all-info {
       display: flex;
       list-style: none;
-      //   font-family: Roboto;
       padding: 0;
+      flex-wrap: wrap;
 
       li {
         font-size: 14px;
@@ -20,18 +25,11 @@ header {
           font-size: 16px;
         }
 
-        // border-left-style: solid;
-
         & + li::before {
           content: "|";
-          //   content: "";
-          //   border-left-style: solid;
+
           color: #676767;
           padding: 0 12px;
-          //   transform: translateX(-8px);
-          //   font-size: 24px;
-          //   font-weight: 100;
-          //   text-align: center;
         }
       }
     }
@@ -57,19 +55,35 @@ header {
     justify-content: space-between;
     padding: 16px 64px;
     border-top: solid 1px #676767;
+    flex-wrap: wrap;
 
-    ul {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      text-align: center;
+    .nav-container {
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+          list-style: none;
+          padding-right: 32px;
+        }
+
+        button {
+          width: 160px;
+          height: 40px;
+          background-color: #000;
+          color: #fff;
+          border-radius: 5px;
+          padding: 8px 20px;
+        }
+      }
     }
 
     .navs {
-      //   border: none;
       width: 573px;
 
-      .nav-container {
+      .modal-nav-container {
         display: block;
 
         ul {
@@ -103,7 +117,15 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 428px) {
+// @media screen and (max-width: 1023px) {
+//   #top-header {
+//     #all-info {
+//       flex-direction: column;
+//     }
+//   }
+// }
+
+@media screen and (max-width: 1023px) {
   header {
     #top-header {
       display: none;
@@ -124,6 +146,10 @@ header {
       position: relative;
       border-top: none;
 
+      .nav-container {
+        display: none;
+      }
+
       .close {
         font-size: 25px;
         width: 30px;
@@ -135,25 +161,29 @@ header {
       }
 
       .navs {
-        // position: fixed;
-        background-color: rgb(2, 193, 126);
+        background-color: #fff;
         border: none;
         width: auto;
         height: 100vh;
-        display: flex;
         flex-direction: column;
         justify-content: center;
-        display: none;
         z-index: 1;
+        border: 5px solid #fff;
 
-        .nav-container {
+        .modal-nav-container {
           z-index: 2;
-          ul {
-            display: none;
-            flex-direction: column;
 
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          ul {
+            list-style: none;
+            padding: 0;
             li {
               padding-top: 1rem;
+              text-align: center;
             }
 
             button {
@@ -168,10 +198,15 @@ header {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
 
             li {
+              // width: 100%;
+              padding-bottom: 1rem;
               img {
-                padding-top: 12px;
+                text-align: center;
               }
             }
           }

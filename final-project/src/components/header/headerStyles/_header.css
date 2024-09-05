@@ -2,16 +2,21 @@ header {
   display: flex;
   flex-direction: column;
 }
+header::-webkit-scrollbar {
+  display: none;
+}
 header #top-header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   padding: 0 64px;
+  flex-wrap: wrap;
 }
 header #top-header #all-info {
   display: flex;
   list-style: none;
   padding: 0;
+  flex-wrap: wrap;
 }
 header #top-header #all-info li {
   font-size: 14px;
@@ -40,26 +45,39 @@ header #bottom-header {
   justify-content: space-between;
   padding: 16px 64px;
   border-top: solid 1px #676767;
+  flex-wrap: wrap;
 }
-header #bottom-header ul {
-  list-style: none;
+header #bottom-header .nav-container ul {
   display: flex;
   flex-direction: row;
-  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+header #bottom-header .nav-container ul li {
+  list-style: none;
+  padding-right: 32px;
+}
+header #bottom-header .nav-container ul button {
+  width: 160px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 20px;
 }
 header #bottom-header .navs {
   width: 573px;
 }
-header #bottom-header .navs .nav-container {
+header #bottom-header .navs .modal-nav-container {
   display: block;
 }
-header #bottom-header .navs .nav-container ul {
+header #bottom-header .navs .modal-nav-container ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 8px;
 }
-header #bottom-header .navs .nav-container ul button {
+header #bottom-header .navs .modal-nav-container ul button {
   width: 160px;
   height: 40px;
   background-color: #000;
@@ -75,7 +93,7 @@ header #bottom-header .hamburger-menu {
   display: none;
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 1023px) {
   header #top-header {
     display: none;
   }
@@ -93,6 +111,9 @@ header #bottom-header .hamburger-menu {
     position: relative;
     border-top: none;
   }
+  header #bottom-header .nav-container {
+    display: none;
+  }
   header #bottom-header .close {
     font-size: 25px;
     width: 30px;
@@ -103,27 +124,31 @@ header #bottom-header .hamburger-menu {
     border: none;
   }
   header #bottom-header .navs {
-    background-color: rgb(2, 193, 126);
+    background-color: #fff;
     border: none;
     width: auto;
     height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    border: 5px solid #fff;
+  }
+  header #bottom-header .navs .modal-nav-container {
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    display: none;
-    z-index: 1;
+    align-items: center;
   }
-  header #bottom-header .navs .nav-container {
-    z-index: 2;
+  header #bottom-header .navs .modal-nav-container ul {
+    list-style: none;
+    padding: 0;
   }
-  header #bottom-header .navs .nav-container ul {
-    display: none;
-    flex-direction: column;
-  }
-  header #bottom-header .navs .nav-container ul li {
+  header #bottom-header .navs .modal-nav-container ul li {
     padding-top: 1rem;
+    text-align: center;
   }
-  header #bottom-header .navs .nav-container ul button {
+  header #bottom-header .navs .modal-nav-container ul button {
     margin-top: 1rem;
   }
   header #bottom-header .navs .bottom-icons-container ul {
@@ -131,9 +156,15 @@ header #bottom-header .hamburger-menu {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  header #bottom-header .navs .bottom-icons-container ul li {
+    padding-bottom: 1rem;
   }
   header #bottom-header .navs .bottom-icons-container ul li img {
-    padding-top: 12px;
+    text-align: center;
   }
   header .hamburger-menu {
     position: relative;
