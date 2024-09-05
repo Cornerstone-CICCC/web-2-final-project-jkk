@@ -1,7 +1,8 @@
-.container {
-  padding: 112px 64px;
+.container_main {
   display: flex;
   justify-content: space-between;
+  padding: 112px 64px;
+  background-color: #f7f7f7;
 }
 
 .container_main_form_paragraph1,
@@ -98,11 +99,32 @@
 }
 
 .container_main_form_submit,
-.containerSp_form_submit {
+.containerSp_form_submit,
+.container_sub_button {
   color: white;
   background-color: #000000;
   padding: 12px 24px;
   border-radius: 5px;
+}
+
+.container_sub {
+  padding: 112px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container_sub_explanation_main {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.container_sub_explanation_sub {
+  font-size: 18px;
+  line-height: 27px;
+}
+.container_sub_button {
+  height: 48px;
 }
 
 @media (min-width: 428px) {
