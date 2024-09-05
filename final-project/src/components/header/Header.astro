@@ -39,7 +39,8 @@ import "./headerStyles/_header.css";
 		<div id="bottom-header">
 			<img src="../../../public/components/header/logo.svg" alt="logo">
 
-			<nav class="navs">
+			<dialog class="navs" open>
+				<button class="close">&times;</button>
 				<div class="nav-container">
 					<ul>
 						<li>Home</li>
@@ -67,7 +68,7 @@ import "./headerStyles/_header.css";
 						</li>
 					</ul>
 				</div>
-			</nav>
+			</dialog>
 
 			<div class="hamburger-menu">
 				<span class="hamburger-line"></span>
@@ -78,12 +79,12 @@ import "./headerStyles/_header.css";
 
 <script>
 	document.querySelector(".hamburger-menu").addEventListener("click", function() {
+		document.querySelector(".navs").style.display = "block";
 		document.querySelector(".nav-container ul").style.display = "block";
 		document.querySelector(".bottom-icons-container").style.display = "block";
 	})
 
-	// document.querySelector(".hamburger-menu").addEventListener("click", function() {
-	// 	document.querySelector(".nav-container ul").style.display = "none"
-	// 	document.querySelector(".bottom-icons-container").style.display = "none"
-	// })
+	document.querySelector(".close").addEventListener("click", function() {
+		document.querySelector(".navs").style.display = "none";
+	})
 </script>
