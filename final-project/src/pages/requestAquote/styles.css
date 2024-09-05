@@ -4,7 +4,7 @@
   justify-content: space-between;
 }
 
-.container_form_paragraph1,
+.container_main_form_paragraph1,
 .containerSp_paragraph1 {
   font-family: Roboto;
   font-size: 16px;
@@ -13,7 +13,7 @@
   margin-bottom: 16px;
 }
 
-.container_form_title {
+.container_main_form_title {
   font-family: Roboto;
   font-size: 48px;
   font-weight: 700;
@@ -21,32 +21,32 @@
   margin-bottom: 24px;
 }
 
-.container_form_paragraph2,
+.container_main_form_paragraph2,
 .containerSp_paragraph2 {
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 32px;
 }
 
-.container_form_inputs,
-.container_form_selects {
+.container_main_form_inputs,
+.container_main_form_selects {
   display: flex;
   gap: 24px;
 }
 
-.container_form_selects {
+.container_main_form_selects {
   margin-bottom: 24px;
 }
 
-.container_form_inputs {
+.container_main_form_inputs {
   margin-bottom: 24px;
 }
 
-.container_form_inputs_1_label,
-.container_form_inputs_2_label,
-.container_form_selects_1_label,
-.container_form_selects_2_label,
-.container_form_textareaLabel,
+.container_main_form_inputs_1_label,
+.container_main_form_inputs_2_label,
+.container_main_form_selects_1_label,
+.container_main_form_selects_2_label,
+.container_main_form_textareaLabel,
 .containerSp_form_fullNameLabel,
 .containerSp_form_phoneNumberLabel,
 .containerSp_form_serviceLabel,
@@ -59,15 +59,15 @@
   line-height: 24px;
 }
 
-.container_form_inputs_1_input,
-.container_form_inputs_2_input {
+.container_main_form_inputs_1_input,
+.container_main_form_inputs_2_input {
   padding: 0;
 }
 
-.container_form_inputs_1_input,
-.container_form_inputs_2_input,
-.container_form_selects_1_select,
-.container_form_selects_2_select,
+.container_main_form_inputs_1_input,
+.container_main_form_inputs_2_input,
+.container_main_form_selects_1_select,
+.container_main_form_selects_2_select,
 .containerSp_form_fullNameInput {
   width: 296px;
   height: 48px;
@@ -75,7 +75,7 @@
   font-size: 20px;
 }
 
-.container_form_textarea {
+.container_main_form_textarea {
   width: 616px;
   border-radius: 5px;
   padding: 12px;
@@ -83,21 +83,21 @@
   display: block;
 }
 
-.container_form_checkbox,
+.container_main_form_checkbox,
 .containerSp_form_checkbox {
   display: flex;
   align-items: center;
   margin-bottom: 41px;
 }
 
-.container_form_checkbox_input,
+.container_main_form_checkbox_input,
 .containerSp_form_checkbox_input {
   width: 18px;
   height: 18px;
   margin-right: 12px;
 }
 
-.container_form_submit,
+.container_main_form_submit,
 .containerSp_form_submit {
   color: white;
   background-color: #000000;
