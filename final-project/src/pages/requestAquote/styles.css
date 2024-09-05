@@ -6,7 +6,7 @@
 }
 
 .container_main_form_paragraph1,
-.containerSp_paragraph1 {
+.containerSp_main_paragraph1 {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 600;
@@ -23,7 +23,7 @@
 }
 
 .container_main_form_paragraph2,
-.containerSp_paragraph2 {
+.containerSp_main_paragraph2 {
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 32px;
@@ -48,11 +48,11 @@
 .container_main_form_selects_1_label,
 .container_main_form_selects_2_label,
 .container_main_form_textareaLabel,
-.containerSp_form_fullNameLabel,
-.containerSp_form_phoneNumberLabel,
-.containerSp_form_serviceLabel,
-.containerSp_form_selectTimeLabel,
-.containerSp_form_textareaLabel {
+.containerSp_main_form_fullNameLabel,
+.containerSp_main_form_phoneNumberLabel,
+.containerSp_main_form_serviceLabel,
+.containerSp_main_form_selectTimeLabel,
+.containerSp_main_form_textareaLabel {
   display: block;
   font-family: Roboto;
   font-size: 16px;
@@ -69,7 +69,7 @@
 .container_main_form_inputs_2_input,
 .container_main_form_selects_1_select,
 .container_main_form_selects_2_select,
-.containerSp_form_fullNameInput {
+.containerSp_main_form_fullNameInput {
   width: 296px;
   height: 48px;
   border-radius: 5px;
@@ -85,21 +85,21 @@
 }
 
 .container_main_form_checkbox,
-.containerSp_form_checkbox {
+.containerSp_main_form_checkbox {
   display: flex;
   align-items: center;
   margin-bottom: 41px;
 }
 
 .container_main_form_checkbox_input,
-.containerSp_form_checkbox_input {
+.containerSp_main_form_checkbox_input {
   width: 18px;
   height: 18px;
   margin-right: 12px;
 }
 
 .container_main_form_submit,
-.containerSp_form_submit,
+.containerSp_main_form_submit,
 .container_sub_button {
   color: white;
   background-color: #000000;
@@ -141,7 +141,7 @@
     display: block;
     padding: 48px 24px;
   }
-  .containerSp_title {
+  .containerSp_main_title {
     font-family: Roboto;
     font-size: 32px;
     font-weight: 700;
@@ -149,15 +149,15 @@
     margin-bottom: 24px;
   }
 
-  .containerSp_form_fullNameInput,
-  .containerSp_form_phoneNumberInput {
+  .containerSp_main_form_fullNameInput,
+  .containerSp_main_form_phoneNumberInput {
     padding: 0;
   }
 
-  .containerSp_form_fullNameInput,
-  .containerSp_form_phoneNumberInput,
-  .containerSp_form_serviceSelect,
-  .containerSp_form_selectTimeSelect {
+  .containerSp_main_form_fullNameInput,
+  .containerSp_main_form_phoneNumberInput,
+  .containerSp_main_form_serviceSelect,
+  .containerSp_main_form_selectTimeSelect {
     width: 100%;
     height: 48px;
     border-radius: 5px;
@@ -165,14 +165,14 @@
     margin-bottom: 24px;
   }
 
-  .containerSp_form_textarea {
+  .containerSp_main_form_textarea {
     width: -webkit-fill-available;
     padding: 12px;
     border-radius: 5px;
     margin-bottom: 24px;
   }
 
-  .containerSp_form_submit {
+  .containerSp_main_form_submit {
     width: 100%;
   }
 }
