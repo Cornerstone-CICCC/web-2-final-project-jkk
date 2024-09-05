@@ -111,13 +111,13 @@
 }
 
 @media (min-width: 428px) {
-  .footer {
+  .footerSp {
     display: none;
   }
 }
 
 @media (max-width: 428px) {
-  .container {
+  .footer {
     display: none;
   }
   .footerSp {
