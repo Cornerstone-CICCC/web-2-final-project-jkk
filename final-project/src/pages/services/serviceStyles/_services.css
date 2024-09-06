@@ -7,12 +7,12 @@
 }
 #services .top-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
 }
 #services .bottom-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
 }
 #services .btn {
@@ -22,12 +22,12 @@
 @media screen and (max-width: 428px) {
   #services {
     display: grid;
-    grid-template-columns: repeat(1, 380px);
+    grid-template-columns: repeat(1, minmax(300px, 380px));
     padding: 64px 0;
     justify-content: center;
   }
   #services .top-cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 380px));
   }
   #services .bottom-cards {
     grid-template-columns: 1fr;
