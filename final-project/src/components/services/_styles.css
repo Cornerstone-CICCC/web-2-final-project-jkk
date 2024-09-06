@@ -21,57 +21,30 @@ main #services {
   grid-template-rows: 1fr;
   gap: 24px;
   padding: 64px 86px 0;
-}
-main #services .top-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-rows: repeat(auto-fit, 380px);
   gap: 24px;
 }
-main #services .top-cards .card-component {
+main #services .card-component {
   border: solid 0.5px #676767;
   border-radius: 5px;
   width: 100%;
+  display: block;
 }
-main #services .top-cards .card-component img {
+main #services .card-component img {
   width: 100%;
 }
-main #services .top-cards .card-component .text {
+main #services .card-component .text {
   padding: 16px 0;
   text-align: center;
 }
-main #services .top-cards .card-component .text h5 {
+main #services .card-component .text h5 {
   font-size: 24px;
   margin: 0;
   padding: 1rem 0;
 }
-main #services .top-cards .card-component .text p {
-  font-size: 16px;
-  width: 70%;
-  margin: 0 auto;
-}
-main #services .bottom-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-}
-main #services .bottom-cards .card-component {
-  border: solid 0.5px #676767;
-  border-radius: 5px;
-  width: 100%;
-}
-main #services .bottom-cards .card-component img {
-  width: 100%;
-}
-main #services .bottom-cards .card-component .text {
-  padding: 16px 0;
-  text-align: center;
-}
-main #services .bottom-cards .card-component .text h5 {
-  font-size: 24px;
-  margin: 0;
-  padding: 1rem 0;
-}
-main #services .bottom-cards .card-component .text p {
+main #services .card-component .text p {
   font-size: 16px;
   width: 70%;
   margin: 0 auto;
@@ -95,7 +68,7 @@ main #services .btn {
     justify-content: center;
   }
   main #services .top-cards {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 380px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 380px));
   }
   main #services .bottom-cards {
     grid-template-columns: 1fr;

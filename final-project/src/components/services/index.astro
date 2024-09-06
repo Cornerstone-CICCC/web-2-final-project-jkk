@@ -8,7 +8,7 @@ import "./_styles.css"
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
   <div id="services">
-      <div class="top-cards">
+      <!-- <div class="top-cards"> -->
           <div class="card-component">
               <img src=`../../../public/services/Image1.png` />
               <div class="text">
@@ -30,37 +30,41 @@ import "./_styles.css"
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
               </div>
           </div>
-      </div>
-      <div class="bottom-cards hidden">
-          <div class="card-component">
+      <!-- </div> -->
+      <!-- <div class="bottom-cards hidden"> -->
+          <div class="card-component hidden">
               <img src=`../../../public/services/Image4.png` />
               <div class="text">
                   <h5>Construction Cleaning</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
               </div>
           </div>
-          <div class="card-component">
+          <div class="card-component hidden">
               <img src=`../../../public/services/Image5.png` />
               <div class="text">
                   <h5>Commercial Cleaning</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
               </div>
           </div>
-          <div class="card-component">
+          <div class="card-component hidden">
               <img src=`../../../public/services/Image6.png` />
               <div class="text">
                   <h5>Two Bedroom Apartment</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
               </div>
           </div>
-      </div>
+      <!-- </div> -->
       <button class="btn">View all</button>
   </div>
 </main>
 
 <script>
+    const hidden = document.querySelectorAll(".card-component.hidden")
   document.querySelector(".btn").addEventListener("click", function() {
-     document.querySelector(".bottom-cards").classList.remove("hidden")
-     document.querySelector(".btn").style.display = "none"
+    hidden.forEach(div => {
+        div.style.display = "block"
+    })
+    
+    document.querySelector(".btn").style.display = "none";
  })
 </script>
