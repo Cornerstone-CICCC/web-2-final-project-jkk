@@ -1,5 +1,6 @@
 ---
 import Services from "./serviceComponents/Services.astro"
+import Header from "../../components/header/Header.astro";
 const serviceImages = await Astro.glob("../../../public/services/*.png")
 import "./serviceStyles/_styles.css"
 import Footer from "../../components/footer/index.astro";
@@ -14,6 +15,7 @@ import Footer from "../../components/footer/index.astro";
         <title>Our Services</title>
     </head>
     <body>
+        <Header />
         <main>
             <div id="service-title">
                 <h1>Our Services</h1>
