@@ -13,21 +13,62 @@ import Services from "../components/services/index.astro";
 	</head>
 	<body>
     <div class="container">
-      <div class="container_text">
-        <h1 class="container_text_title">
-          A Clean Home,
-          A Happy Life,
-          Let Us Handle the Dirty Work!
-        </h1>
-        <p class="container_text_paragraph">
-          We develop innovative design solutions that enable our clients to enhance their competitive advantage.
-        </p>
-        <div class="container_text_buttons">
-          <button class="container_text_buttons_1">Request A Quote</button>
-          <button class="container_text_buttons_2">Learn More</button>
+      <div class="container_main">
+        <div class="container_main_text">
+          <h1 class="container_main_text_title">
+            A Clean Home,
+            A Happy Life,
+            Let Us Handle the Dirty Work!
+          </h1>
+          <p class="container_main_text_paragraph">
+            We develop innovative design solutions that enable our clients to enhance their competitive advantage.
+          </p>
+          <div class="container_main_text_buttons">
+            <button class="container_main_text_buttons_1">Request A Quote</button>
+            <button class="container_main_text_buttons_2">Learn More</button>
+          </div>
         </div>
+        <img src="/index/Image.png" />
       </div>
-      <img src="/index/Image.png" />
+      <form class="container_form">
+        <div>
+          <label class="container_form_label">Full name</label>
+          <input class="container_form_input" />
+        </div>
+        <div>
+          <label class="container_form_label">Phone Number</label>
+          <input class="container_form_input" />
+        </div>
+        <div>
+          <label class="container_form_label">Comment</label>
+          <input class="container_form_input" />
+        </div>
+        <button class="container_form_button">Request A Quote</button>
+      </form>
+    </div>
+    <div class="containerSp">
+      <h1 class="containerSp_title">
+        A Clean Home,
+        A Happy Life,
+        Let Us Handle the Dirty Work!
+      </h1>
+      <p class="containerSp_paragraph">
+        We develop innovative design solutions that enable our clients to enhance their competitive advantage.
+      </p>
+      <div class="containerSp_buttons">
+        <button class="containerSp_buttons_1">Request A Quote</button>
+        <button class="containerSp_buttons_2">Learn More</button>
+      </div>
+      <img src="/index/sp.png" class="containerSp_image" />
+      <form class="containerSp_form">
+        <lable class="containerSp_form_label">Full name</lable>
+        <input class="containerSp_form_input" />
+        <lable class="containerSp_form_label">Phone Number</lable>
+        <input class="containerSp_form_input" />
+        <lable class="containerSp_form_label">Comment</lable>
+        <input class="containerSp_form_input" />
+        <button class="containerSp_form_button">Request A Quote</button>
+      </form>
     </div>
     <Services />
 	</body>
