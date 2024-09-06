@@ -1,6 +1,8 @@
 ---
 import './styles.css';
 import Services from "../components/services/index.astro";
+import RequestAquote from "../components/requestAquote/index.astro";
+import Footer from "../components/footer/index.astro";
 ---
 
 <html lang="en">
@@ -13,22 +15,160 @@ import Services from "../components/services/index.astro";
 	</head>
 	<body>
     <div class="container">
-      <div class="container_text">
-        <h1 class="container_text_title">
-          A Clean Home,
-          A Happy Life,
-          Let Us Handle the Dirty Work!
-        </h1>
-        <p class="container_text_paragraph">
-          We develop innovative design solutions that enable our clients to enhance their competitive advantage.
-        </p>
-        <div class="container_text_buttons">
-          <button class="container_text_buttons_1">Request A Quote</button>
-          <button class="container_text_buttons_2">Learn More</button>
+      <div class="container_main">
+        <div class="container_main_text">
+          <h1 class="container_main_text_title">
+            A Clean Home,
+            A Happy Life,
+            Let Us Handle the Dirty Work!
+          </h1>
+          <p class="container_main_text_paragraph">
+            We develop innovative design solutions that enable our clients to enhance their competitive advantage.
+          </p>
+          <div class="container_main_text_buttons">
+            <button class="container_main_text_buttons_1">Request A Quote</button>
+            <button class="container_main_text_buttons_2">Learn More</button>
+          </div>
         </div>
+        <img src="/index/Image.png" />
       </div>
-      <img src="/index/Image.png" />
+      <form class="container_form">
+        <div>
+          <label class="container_form_label">Full name</label>
+          <input class="container_form_input" />
+        </div>
+        <div>
+          <label class="container_form_label">Phone Number</label>
+          <input class="container_form_input" />
+        </div>
+        <div>
+          <label class="container_form_label">Comment</label>
+          <input class="container_form_input" />
+        </div>
+        <button class="container_form_button">Request A Quote</button>
+      </form>
+    </div>
+    <div class="containerSp">
+      <h1 class="containerSp_title">
+        A Clean Home,
+        A Happy Life,
+        Let Us Handle the Dirty Work!
+      </h1>
+      <p class="containerSp_paragraph">
+        We develop innovative design solutions that enable our clients to enhance their competitive advantage.
+      </p>
+      <div class="containerSp_buttons">
+        <button class="containerSp_buttons_1">Request A Quote</button>
+        <button class="containerSp_buttons_2">Learn More</button>
+      </div>
+      <img src="/index/sp.png" class="containerSp_image" />
+      <form class="containerSp_form">
+        <lable class="containerSp_form_label">Full name</lable>
+        <input class="containerSp_form_input" />
+        <lable class="containerSp_form_label">Phone Number</lable>
+        <input class="containerSp_form_input" />
+        <lable class="containerSp_form_label">Comment</lable>
+        <input class="containerSp_form_input" />
+        <button class="containerSp_form_button">Request A Quote</button>
+      </form>
     </div>
     <Services />
+    <div class="containerAbout">
+      <div class="containerAbout_text">
+        <span class="containerAbout_text_tag">About Us</span>
+        <h1 class="containerAbout_text_title">
+          Let us takecare of all your cleaning service needs.
+        </h1>
+        <p class="containerAbout_text_paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.Lo
+        </p>
+        <button class="containerAbout_text_button">Request a quote</button>
+      </div>
+      <img src="/aboutUs/Image.png" class="containerAbout_image" />
+    </div>
+    <div class="containerAboutSp">
+      <span class="containerAboutSp_tag">About Us</span>
+      <h1 class="containerAboutSp_title">Let us takecare of all your cleaning service needs.</h1>
+      <p class="containerAboutSp_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.Lorem ipsum dolor sit amet, consectetur</p>
+      <button class="containerAboutSp_button">Request a quote</button>
+      <img src="/index/about_sp.png" />
+    </div>
+    <div class="containerOurTeam">
+      <h1 class="containerOurTeam_title">Our team</h1>
+      <p class="containerOurTeam_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      <div class="containerOurTeam_info">
+        <div class="containerOurTeam_info_card">
+          <img src="/index/ourTeam.png" />
+          <div class="containerOurTeam_info_card_profile">
+            <span class="containerOurTeam_info_card_profile_name">Leslie Alexander</span>
+            <p class="containerOurTeam_info_card_profile_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <img src="/components/footer/LinkedIn.svg" />
+            <img src="/components/footer/Twitter.svg" />
+            <img src="/index/Dribble.svg" />
+          </div>
+        </div>
+        <div class="containerOurTeam_info_card">
+          <img src="/index/ourTeam.png" />
+          <div class="containerOurTeam_info_card_profile">
+            <span class="containerOurTeam_info_card_profile_name">Leslie Alexander</span>
+            <p class="containerOurTeam_info_card_profile_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <img src="/components/footer/LinkedIn.svg" />
+            <img src="/components/footer/Twitter.svg" />
+            <img src="/index/Dribble.svg" />
+          </div>
+        </div>
+        <div class="containerOurTeam_info_card">
+          <img src="/index/ourTeam.png" />
+          <div class="containerOurTeam_info_card_profile">
+            <span class="containerOurTeam_info_card_profile_name">Leslie Alexander</span>
+            <p class="containerOurTeam_info_card_profile_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <img src="/components/footer/LinkedIn.svg" />
+            <img src="/components/footer/Twitter.svg" />
+            <img src="/index/Dribble.svg" />
+          </div>
+        </div>
+        <div class="containerOurTeam_info_card">
+          <img src="/index/ourTeam.png" />
+          <div class="containerOurTeam_info_card_profile">
+            <span class="containerOurTeam_info_card_profile_name">Leslie Alexander</span>
+            <p class="containerOurTeam_info_card_profile_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <img src="/components/footer/LinkedIn.svg" />
+            <img src="/components/footer/Twitter.svg" />
+            <img src="/index/Dribble.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="containerOurTeamSp">
+      <h1 class="containerOurTeamSp_title">Our team</h1>
+      <p class="containerOurTeamSp_paragraph">Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit. </p>
+      <div class="containerOurTeamSp_card">
+        <img src="/index/ourTeamSp.png" />
+        <span class="containerOurTeamSp_card_name">Leslie Alexander</span>
+        <p class="containerOurTeamSp_card_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+        <img src="/components/footer/LinkedIn.svg" />
+        <img src="/components/footer/Twitter.svg" />
+        <img src="/index/Dribble.svg" />
+      </div>
+      <div class="containerOurTeamSp_card">
+        <img src="/index/ourTeamSp.png" />
+        <span class="containerOurTeamSp_card_name">Leslie Alexander</span>
+        <p class="containerOurTeamSp_card_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+        <img src="/components/footer/LinkedIn.svg" />
+        <img src="/components/footer/Twitter.svg" />
+        <img src="/index/Dribble.svg" />
+      </div>
+      <div class="containerOurTeamSp_card">
+        <img src="/index/ourTeamSp.png" />
+        <span class="containerOurTeamSp_card_name">Leslie Alexander</span>
+        <p class="containerOurTeamSp_card_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+        <img src="/components/footer/LinkedIn.svg" />
+        <img src="/components/footer/Twitter.svg" />
+        <img src="/index/Dribble.svg" />
+      </div>
+      <button class="containerOurTeamSp_button">View all</button>
+    </div>
+    <RequestAquote />
+    <Footer />
 	</body>
 </html>
