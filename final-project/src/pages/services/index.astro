@@ -1,5 +1,4 @@
 ---
-import Services from "./serviceComponents/Services.astro"
 import Header from "../../components/header/Header.astro";
 const serviceImages = await Astro.glob("../../../public/services/*.png")
 import "./serviceStyles/_styles.css"
@@ -22,9 +21,64 @@ import Footer from "../../components/footer/index.astro";
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
-            <Services />
+            <div id="services">
+                <div class="top-cards">
+                    <div class="card-component">
+                        <img src=`../../../public/services/Image1.png` />
+                        <div class="text">
+                            <h5>One Bedroom Apartment</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                    </div>
+                    <div class="card-component">
+                        <img src=`../../../public/services/Image2.png` />
+                        <div class="text">
+                            <h5>Window Cleaning</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                    </div>
+                    <div class="card-component">
+                        <img src=`../../../public/services/Image3.png` />
+                        <div class="text">
+                            <h5>Residential Cleaning</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-cards hidden">
+                    <div class="card-component">
+                        <img src=`../../../public/services/Image4.png` />
+                        <div class="text">
+                            <h5>Construction Cleaning</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                    </div>
+                    <div class="card-component">
+                        <img src=`../../../public/services/Image5.png` />
+                        <div class="text">
+                            <h5>Commercial Cleaning</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                    </div>
+                    <div class="card-component">
+                        <img src=`../../../public/services/Image6.png` />
+                        <div class="text">
+                            <h5>Two Bedroom Apartment</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <button class="btn">View all</button>
+            </div>
         </main>
         <Footer />
     </body>
 </html>
 
+<script>
+     document.querySelector(".btn").addEventListener("click", function() {
+        document.querySelector(".bottom-cards").classList.remove("hidden")
+        document.querySelector(".btn").style.display = "none"
+    })
+</script>
