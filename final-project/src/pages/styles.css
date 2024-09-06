@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+}
+.container_text {
+  padding: 233px 80px;
+}
+.container_text_title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+}
+.container_text_paragraph {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 24px;
+}
+.container_text_buttons {
+  display: flex;
+  gap: 16px;
+}
+.container_text_buttons_1,
+.container_text_buttons_2 {
+  padding: 12px 24px;
+  border-radius: 5px;
+}
+.container_text_buttons_1 {
+  background-color: #000;
+  color: white;
+}
+.container_text_buttons_2 {
+  background-color: white;
+}
+
+body,
+p,
+h1 {
+  margin: 0;
+}
