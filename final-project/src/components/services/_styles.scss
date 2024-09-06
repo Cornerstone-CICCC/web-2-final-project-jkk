@@ -18,15 +18,10 @@ main {
   }
 
   #services {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 24px;
     padding: 64px 86px 0;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    grid-template-rows: repeat(auto-fit, 380px);
+    grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
     gap: 24px;
 
     .card-component {
