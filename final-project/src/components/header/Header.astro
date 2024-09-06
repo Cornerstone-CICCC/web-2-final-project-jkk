@@ -1,0 +1,105 @@
+---
+import "./headerStyles/_header.css";
+---
+
+<!-- <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head> -->
+	<header>
+		<div id="top-header">
+			<ul id="all-info">
+				<li><strong class="font-bold">For emergency cases: 567 123 45 67</strong></li>
+				<li>Location: 121 Wallstreet Street, NY , USA</li>
+				<li>Open hours: 9.00-24.00 Mon-Sat</li>
+				<li>Email:info@ddsgnr.com</li>
+			</ul>
+			<div class="icons-container">
+				<ul id="icons">
+					<li>
+						<img src="../../../public/components/header/Facebook.svg" alt="facebook">
+					</li>
+					<li>
+						<img src="../../../public/components/header/Instagram.svg" alt="instagram">
+					</li>
+					<li>
+						<img src="../../../public/components/header/Twitter.svg" alt="twitter">
+					</li>
+					<li>
+						<img src="../../../public/components/header/LinkedIn.svg" alt="linkedIn">
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="bottom-header">
+			<a href="/">
+				<img src="../../../public/components/header/logo.svg" alt="logo">
+			</a>
+
+			<div class="nav-container">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/aboutUs">About</a></li>
+					<li><a href="/services">Services</a></li>
+					<li><a href="/">Teams</a></li>
+					<li><a href="/">Contact</a></li>
+					<button><a href="/requestAqu">Request A Quote</a></button>
+				</ul>
+			</div>
+
+			<dialog class="navs">
+				<button class="close">&times;</button>
+				<div class="modal-nav-container">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/aboutUs">About</a></li>
+						<li><a href="/services">Services</a></li>
+						<li><a href="/">Teams</a></li>
+						<li><a href="/">Contact</a></li>
+						<button><a href="/requestAqu">Request A Quote</a></button>
+					</ul>
+				</div>
+				
+				<div class="bottom-icons-container hidden">
+					<ul>
+						<li>
+							<img src="../../../public/components/header/Facebook.svg" alt="facebook">
+						</li>
+						<li>
+							<img src="../../../public/components/header/Instagram.svg" alt="instagram">
+						</li>
+						<li>
+							<img src="../../../public/components/header/Twitter.svg" alt="twitter">
+						</li>
+						<li>
+							<img src="../../../public/components/header/LinkedIn.svg" alt="linkedIn">
+						</li>
+					</ul>
+				</div>
+			</dialog>
+
+			<div class="hamburger-menu">
+				<span class="hamburger-line"></span>
+			</div>
+		</div>
+	</header>
+<!-- </html> -->
+
+<script>
+	document.querySelector(".hamburger-menu").addEventListener("click", function() {
+		// document.querySelector(".navs").style.display = "block";
+		document.querySelector(".navs").showModal();
+		document.querySelector(".modal-nav-container ul").style.display = "block";
+		document.querySelector(".bottom-icons-container").style.display = "block";
+	})
+
+	document.querySelector(".close").addEventListener("click", function(e) {
+		e.preventDefault()
+		document.querySelector(".navs").close();
+	})
+</script>

@@ -1,0 +1,236 @@
+*::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+header #top-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 64px;
+  flex-wrap: wrap;
+}
+header #top-header #all-info {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+header #top-header #all-info li {
+  font-size: 14px;
+}
+header #top-header #all-info li .font-bold {
+  font-size: 16px;
+}
+header #top-header #all-info li + li::before {
+  content: "|";
+  color: #676767;
+  padding: 0 12px;
+}
+header #top-header #icons {
+  display: flex;
+  list-style: none;
+  gap: 14px;
+  text-align: center;
+  align-items: center;
+}
+header #top-header #icons .icons-container .top-icons-dialog {
+  display: flex;
+  flex-direction: row;
+}
+header #bottom-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 64px;
+  border-top: solid 1px #676767;
+  flex-wrap: wrap;
+}
+header #bottom-header .nav-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header #bottom-header .nav-container ul li {
+  list-style: none;
+  padding-right: 32px;
+}
+header #bottom-header .nav-container ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header #bottom-header .nav-container ul li a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+header #bottom-header .nav-container ul button {
+  width: 160px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+header #bottom-header .nav-container ul button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid;
+}
+header #bottom-header .nav-container ul button a {
+  text-decoration: none;
+  color: #fff;
+}
+header #bottom-header .navs {
+  width: 573px;
+}
+header #bottom-header .navs .modal-nav-container {
+  display: block;
+}
+header #bottom-header .navs .modal-nav-container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+header #bottom-header .navs .modal-nav-container ul button {
+  width: 160px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+header #bottom-header .hamburger-menu {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  header #top-header {
+    display: none;
+  }
+  header #top-header #all-info {
+    flex-direction: column;
+    display: none;
+  }
+  header #top-header #icons {
+    flex-direction: column;
+  }
+  header #bottom-header {
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-top: none;
+  }
+  header #bottom-header .nav-container {
+    display: none;
+  }
+  header #bottom-header .close {
+    font-size: 25px;
+    width: 30px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
+  header #bottom-header .navs {
+    background-color: #fff;
+    border: none;
+    width: auto;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    border: 5px solid #fff;
+  }
+  header #bottom-header .navs .modal-nav-container {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header #bottom-header .navs .modal-nav-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  header #bottom-header .navs .modal-nav-container ul li {
+    padding-top: 1rem;
+    text-align: center;
+  }
+  header #bottom-header .navs .modal-nav-container ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  header #bottom-header .navs .modal-nav-container ul li a:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  header #bottom-header .navs .modal-nav-container ul button {
+    margin-top: 1rem;
+  }
+  header #bottom-header .navs .modal-nav-container ul button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  header #bottom-header .navs .modal-nav-container ul button a {
+    text-decoration: none;
+    color: #fff;
+  }
+  header #bottom-header .navs .bottom-icons-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  header #bottom-header .navs .bottom-icons-container ul li {
+    padding-bottom: 1rem;
+  }
+  header #bottom-header .navs .bottom-icons-container ul li img {
+    text-align: center;
+  }
+  header .hamburger-menu {
+    position: relative;
+    display: block !important;
+    width: 40px;
+    height: 40px;
+  }
+  header .hamburger-menu .hamburger-line {
+    position: absolute;
+    background-color: #000;
+    display: block;
+    height: 3px;
+    width: 18px;
+    top: 50%;
+    left: calc(50% - 9px);
+  }
+  header .hamburger-menu .hamburger-line::before {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    display: block;
+    height: 3px;
+    width: 18px;
+    top: calc(50% - 6px);
+    left: calc(50% - 9px);
+  }
+  header .hamburger-menu .hamburger-line::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    display: block;
+    height: 3px;
+    width: 18px;
+    top: calc(50% + 3px);
+    left: calc(50% - 9px);
+  }
+}
+
+/*# sourceMappingURL=_header.css.map */
