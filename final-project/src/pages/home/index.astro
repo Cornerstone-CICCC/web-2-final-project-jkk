@@ -14,20 +14,38 @@
 		<nav class="container">
 		
 		<div class="quote">
-			<p id="aboutUs-title">About Us</p>
-		<h4>Let us takecare of all your cleaning service needs.</h4>
+			
+            <h4>A Clean Home, <br>A Happy Life,<br>
+    Let Us Handle the Dirty Work!</h4>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.Lo
+			We develop innovative design solutions that enable our clients to enhance their competitive advantage.
 		</p>
 
+        <div class="buttons">
 		<button id="req-quote"> Request a quote</button>
+        <button id="learn-more">Learn More</button>
+        </div>
 		
 		</div>
 
 		<div class="image">
 			<img src="../../../public/aboutUs/Image.png" alt="" class="img">
 		</div>
+
+        
 		</nav>
+        <div class="form">
+            <form action="">
+            
+           <label for="name">Full Name</label>
+           <input type="text" id="name" name="name">
+           <label for="number">Phone Number</label>
+            <input type="text" id="number" name="number">
+            <label for="comment">Comment</label><br>
+            <input type="text" id="comment" name="comment">
+        
+        </form>
+        </div>
 	</body>
 </html>
 <style>
@@ -61,7 +79,7 @@
 		background-color: black;
 		color: white;
 		border-radius: 5px;
-		width: 155px;
+		width: 145px;
 		height: 40px;
 		margin-bottom: 40px;
 	}
@@ -89,7 +107,28 @@
 	.img{
 		width: 450px;
 	}
-	
+    #learn-more{
+        width: 100px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 3px;
+        margin-left: 10px;
+
+        background-color: transparent;
+
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+    }
+
+    .form ul{
+        display: flex;
+        grid: auto auto;
+    }
+
+   
 	@media (max-width: 768px) {
 		nav{
 			display: flex;
@@ -113,6 +152,9 @@
 			
 
 		}
+        .buttons{
+            display: flex;
+        }
 		
 		
 		.img{
