@@ -1,9 +1,10 @@
+*::-webkit-scrollbar {
+  display: none;
+}
+
 header {
   display: flex;
   flex-direction: column;
-}
-header::-webkit-scrollbar {
-  display: none;
 }
 header #top-header {
   display: flex;
@@ -57,13 +58,27 @@ header #bottom-header .nav-container ul li {
   list-style: none;
   padding-right: 32px;
 }
+header #bottom-header .nav-container ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header #bottom-header .nav-container ul li a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
 header #bottom-header .nav-container ul button {
   width: 160px;
   height: 40px;
   background-color: #000;
-  color: #fff;
   border-radius: 5px;
   padding: 8px 20px;
+}
+header #bottom-header .nav-container ul button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid;
+}
+header #bottom-header .nav-container ul button a {
+  text-decoration: none;
+  color: #fff;
 }
 header #bottom-header .navs {
   width: 573px;
@@ -148,8 +163,23 @@ header #bottom-header .hamburger-menu {
     padding-top: 1rem;
     text-align: center;
   }
+  header #bottom-header .navs .modal-nav-container ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  header #bottom-header .navs .modal-nav-container ul li a:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
   header #bottom-header .navs .modal-nav-container ul button {
     margin-top: 1rem;
+  }
+  header #bottom-header .navs .modal-nav-container ul button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  header #bottom-header .navs .modal-nav-container ul button a {
+    text-decoration: none;
+    color: #fff;
   }
   header #bottom-header .navs .bottom-icons-container ul {
     display: flex;
