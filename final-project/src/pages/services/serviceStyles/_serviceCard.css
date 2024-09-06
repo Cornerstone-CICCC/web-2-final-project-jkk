@@ -12,6 +12,8 @@
 }
 #card-component .text h5 {
   font-size: 24px;
+  margin: 0;
+  padding: 1rem 0;
 }
 #card-component .text p {
   font-size: 16px;
