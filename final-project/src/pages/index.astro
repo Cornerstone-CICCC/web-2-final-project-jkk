@@ -1,5 +1,6 @@
 ---
-
+import './styles.css';
+import Services from "../components/services/index.astro";
 ---
 
 <html lang="en">
@@ -11,6 +12,23 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+    <div class="container">
+      <div class="container_text">
+        <h1 class="container_text_title">
+          A Clean Home,
+          A Happy Life,
+          Let Us Handle the Dirty Work!
+        </h1>
+        <p class="container_text_paragraph">
+          We develop innovative design solutions that enable our clients to enhance their competitive advantage.
+        </p>
+        <div class="container_text_buttons">
+          <button class="container_text_buttons_1">Request A Quote</button>
+          <button class="container_text_buttons_2">Learn More</button>
+        </div>
+      </div>
+      <img src="/index/Image.png" />
+    </div>
+    <Services />
 	</body>
 </html>
