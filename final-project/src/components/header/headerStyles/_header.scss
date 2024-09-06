@@ -117,14 +117,6 @@ header {
   display: none;
 }
 
-// @media screen and (max-width: 1023px) {
-//   #top-header {
-//     #all-info {
-//       flex-direction: column;
-//     }
-//   }
-// }
-
 @media screen and (max-width: 1023px) {
   header {
     #top-header {
@@ -203,7 +195,6 @@ header {
             margin: 0;
 
             li {
-              // width: 100%;
               padding-bottom: 1rem;
               img {
                 text-align: center;
