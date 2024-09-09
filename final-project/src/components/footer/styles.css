@@ -9,10 +9,6 @@
   border-bottom: 1px solid #000000;
 }
 
-.footer_main_formArea {
-  width: 500px;
-}
-
 .footer_main_formArea_logoArea {
   display: flex;
   align-items: center;
@@ -62,12 +58,9 @@
 }
 
 .footer_main_links {
+  width: -webkit-fill-available;
   display: flex;
-  gap: 40px;
-}
-
-.footer_main_links_section {
-  width: 200px;
+  justify-content: space-between;
 }
 
 .footer_main_links_section_header {
@@ -110,13 +103,13 @@
   gap: 24px;
 }
 
-@media (min-width: 428px) {
+@media (min-width: 780px) {
   .footerSp {
     display: none;
   }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 780px) {
   .footer {
     display: none;
   }
