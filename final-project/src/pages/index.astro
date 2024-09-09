@@ -32,7 +32,8 @@ import Footer from "../components/footer/index.astro";
             <button class="container_main_text_buttons_2">Learn More</button>
           </div>
         </div>
-        <img src="/index/Image.png" />
+        <img src="/index/Image.png" class="home-main-img" />
+        <img src="/index/sp.png" alt="sp.png" class="home-sp-img">
       </div>
       <form class="container_form">
         <div>
@@ -65,13 +66,25 @@ import Footer from "../components/footer/index.astro";
       </div>
       <img src="/index/sp.png" class="containerSp_image" />
       <form class="containerSp_form">
-        <lable class="containerSp_form_label">Full name</lable>
-        <input class="containerSp_form_input" />
-        <lable class="containerSp_form_label">Phone Number</lable>
-        <input class="containerSp_form_input" />
-        <lable class="containerSp_form_label">Comment</lable>
-        <input class="containerSp_form_input" />
-        <button class="containerSp_form_button">Request A Quote</button>
+
+        <div class="form-container">
+
+          <div class="fullname-container">
+            <lable class="containerSp_form_label">Full name</lable>
+            <input class="containerSp_form_input" />
+          </div>
+  
+          <div class="phonenumber-container">
+            <lable class="containerSp_form_label">Phone Number</lable>
+            <input class="containerSp_form_input" />
+          </div>
+  
+          <div class="comment-container">
+            <lable class="containerSp_form_label">Comment</lable>
+            <input class="containerSp_form_input" />
+          </div>
+          <button class="containerSp_form_button">Request A Quote</button>
+        </div>
       </form>
     </div>
     <Services />

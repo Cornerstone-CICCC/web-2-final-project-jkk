@@ -30,21 +30,29 @@
 
 		<div class="image">
 			<img src="../../../public/aboutUs/Image.png" alt="" class="img">
+			<img src="../../../public/aboutUs/sp.png" alt="sm-img" class="img hidden">
 		</div>
 
         
 		</nav>
         <div class="form">
             <form action="">
-            
-           <label for="name">Full Name</label>
-           <input type="text" id="name" name="name">
-           <label for="number">Phone Number</label>
-            <input type="text" id="number" name="number">
-            <label for="comment">Comment</label><br>
-            <input type="text" id="comment" name="comment">
+            	<div class="fullname-container">
+					<label for="name">Full Name</label>
+					<input type="text" id="name" name="name">
+				</div>
+
+				<div class="phonenumber-container">
+					<label for="number">Phone Number</label>
+					<input type="text" id="number" name="number">
+				</div>
+
+				<div class="comment-container">
+					<label for="comment">Comment</label><br>
+					<input type="text" id="comment" name="comment">
+				</div>
         
-        </form>
+        	</form>
         </div>
 	</body>
 </html>
@@ -128,6 +136,14 @@
         grid: auto auto;
     }
 
+	.form form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	@media screen and (max-width: 1325px) {
+		
+	}
    
 	@media (max-width: 768px) {
 		nav{
