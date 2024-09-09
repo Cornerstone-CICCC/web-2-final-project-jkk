@@ -128,13 +128,13 @@
   height: 48px;
 }
 
-@media (min-width: 428px) {
+@media (min-width: 780px) {
   .containerSp {
     display: none;
   }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 780px) {
   .container {
     display: none;
   }
