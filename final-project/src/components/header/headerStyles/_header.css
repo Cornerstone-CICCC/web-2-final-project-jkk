@@ -48,6 +48,9 @@ header #bottom-header {
   border-top: solid 1px #676767;
   flex-wrap: wrap;
 }
+header #bottom-header a {
+  margin: auto 0;
+}
 header #bottom-header .nav-container ul {
   display: flex;
   flex-direction: row;
