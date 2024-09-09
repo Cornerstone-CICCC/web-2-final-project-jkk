@@ -1,5 +1,6 @@
 .container_main {
   display: flex;
+  flex-wrap: wrap-reverse;
 }
 .container_main_text {
   padding: 233px 80px;
@@ -9,6 +10,11 @@
   font-weight: 700;
   line-height: 67.2px;
 }
+
+.home-sp-img {
+  display: none;
+}
+
 .container_main_text_paragraph {
   font-size: 18px;
   font-weight: 400;
@@ -45,7 +51,9 @@
   justify-content: space-between;
   padding: 55px 162px;
   align-items: end;
+  flex-wrap: wrap;
 }
+
 .container_form_label {
   display: block;
 }
@@ -56,6 +64,16 @@
 .container_form_button {
   width: 148px;
   height: 48px;
+}
+
+@media screen and (max-width: 850px) {
+  .home-main-img {
+    display: none;
+  }
+
+  .home-sp-img {
+    display: block;
+  }
 }
 
 @media (min-width: 428px) {
@@ -92,6 +110,7 @@
   .containerSp_form {
     padding: 48px 24px;
   }
+
   .containerSp_form_label {
     display: block;
     line-height: 24px;
