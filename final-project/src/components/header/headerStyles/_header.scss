@@ -57,6 +57,10 @@ header {
     border-top: solid 1px #676767;
     flex-wrap: wrap;
 
+    a {
+      margin: auto 0;
+    }
+
     .nav-container {
       ul {
         display: flex;
