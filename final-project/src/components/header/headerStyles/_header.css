@@ -45,8 +45,9 @@ header #top-header #icons .icons-container .top-icons-dialog {
 header #bottom-header {
   display: flex;
   justify-content: space-between;
-  padding: 16px 64px;
+  padding: 0px 64px;
   border-top: solid 1px #676767;
+  border-bottom: solid 1px #676767;
   flex-wrap: wrap;
 }
 header #bottom-header a {
@@ -112,7 +113,7 @@ header #bottom-header .hamburger-menu {
   display: none;
 }
 
-@media screen and (max-width: 1185px) {
+@media screen and (max-width: 1300px) {
   header #top-header {
     display: none;
   }
